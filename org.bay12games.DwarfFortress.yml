@@ -20,4 +20,4 @@ modules:
   - modules/libcanberra.yml
   - modules/dwarf-fortress/dwarf-fortress.yml
   - modules/dfhack.yml
-  - modules/twbt/twbt.yml
+  - modules/twbt.yml

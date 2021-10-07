@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Dwarf Fortress (Flatpak)
+Name=Dwarf Fortress
 Icon=org.bay12games.DwarfFortress
 Exec=/app/startup.sh
 Categories=Game;

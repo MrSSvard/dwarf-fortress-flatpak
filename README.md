@@ -2,11 +2,10 @@
 Flatpak Packaging for Dwarf Fortress
 
 ## Contents
-
-* Dwarf Fortress
-* Phoebus Graphics Pack
-* DFHack
-* TWBT
+* Dwarf Fortress 0.47.05
+* Phoebus Graphics Pack 47.05
+* DFHack 0.47.05-r3
+* TWBT 6
 * Various dependencies
 
 ## Installing
