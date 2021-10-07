@@ -9,6 +9,12 @@ Flatpak Packaging for Dwarf Fortress
 * TWBT
 * Various dependencies
 
+## Installing
+
+```bash
+flatpak-builder build-dir --force-clean --install --user org.bay12games.DwarfFortress.yml
+```
+
 ## Updating/Cleaning 
 
 Dwarf Fortress is copied to ```~/.var/app/org.bay12games.DwarfFortress/data``` on first run so if you want to update or make a clean DF, remove ```~/.var/app/org.bay12games.DwarfFortress```
