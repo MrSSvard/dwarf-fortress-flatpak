@@ -1,0 +1,17 @@
+name: twbt
+no-autogen: true
+buildsystem: simple
+sources:
+  - type: archive
+    url: https://github.com/mifki/df-twbt/releases/download/v6.61/twbt-6.61-linux.zip
+    sha256: dc1b89764dc4bc2056c88d9bd13ac8b913fccb7df1b6aec70090983673f2781d
+    strip-components: 1
+  - type: file
+    path: twbt.plug.so
+build-commands:
+  - sed -i 's;PRINT_MODE:2D;PRINT_MODE:TWBT;g' /app/df/data/init/init.txt
+  - install overrides.txt /app/df/data/init/
+  - install shadows.png /app/df/data/art/
+  - install transparent1px.png /app/df/data/art/
+  - install white1px.png /app/df/data/art/
+  - install twbt.plug.so /app/df/hack/plugins/

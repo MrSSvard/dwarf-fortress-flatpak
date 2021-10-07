@@ -1,0 +1,11 @@
+name: dfhack
+no-autogen: true
+buildsystem: simple
+sources:
+  - type: archive
+    url: https://github.com/DFHack/dfhack/releases/download/0.47.05-r3/dfhack-0.47.05-r3-Linux-64bit-gcc-7.tar.bz2
+    sha256: 65451ab3a851103e1f64cadab46ba1e5c2110d38e1ba526339f85b5ab0eccde6
+    strip-components: 0
+build-commands:
+  - mv dfhack.init-example dfhack.init
+  - mv * /app/df/

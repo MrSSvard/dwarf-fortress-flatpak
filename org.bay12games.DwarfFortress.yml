@@ -1,0 +1,23 @@
+app-id: org.bay12games.DwarfFortress
+runtime: org.gnome.Platform
+runtime-version: '41'
+sdk: org.gnome.Sdk
+command: /app/startup.sh
+finish-args:
+  - --socket=fallback-x11
+  - --share=ipc
+  - --device=dri
+  - --socket=pulseaudio
+modules:
+  - modules/gtk2.yml
+  - modules/glew.yml
+  - modules/glu.yml
+  - modules/freetype2.yml
+  - modules/libsdl.yml
+  - modules/sdl_image.yml
+  - modules/sdl_ttf.yml
+  - modules/openal.yml
+  - modules/libcanberra.yml
+  - modules/dwarf-fortress/dwarf-fortress.yml
+  - modules/dfhack.yml
+  - modules/twbt/twbt.yml

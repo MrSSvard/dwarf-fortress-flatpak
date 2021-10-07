@@ -1,0 +1,12 @@
+name: libglu
+config-opts:
+  - '--enable-shared'
+  - '--disable-static'
+sources:
+  - type: archive
+    url: https://archive.mesa3d.org/glu/glu-9.0.2.tar.gz
+    sha256: 24effdfb952453cc00e275e1c82ca9787506aba0282145fff054498e60e19a65
+cleanup:
+  - /include
+  - /lib/*.la
+  - /lib/pkgconfig

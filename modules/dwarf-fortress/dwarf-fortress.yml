@@ -1,0 +1,37 @@
+name: dwarf-fortress
+no-autogen: true
+buildsystem: simple
+build-commands:
+  - cp -r data/art/* df/data/art/
+  - cp -r data/twbt_art/* df/data/art/
+  - cp -r data/init/* df/data/init/
+  - cp -r data/twbt_init/* df/data/init/
+  - cp -r raw/objects/* df/raw/objects/
+  - cp -r raw/twbt_objects/* df/raw/objects/
+  - cp -r raw/graphics/* df/raw/graphics/
+  - cp -r raw/twbt_graphics/* df/raw/graphics/
+  - cp raw/onLoad_gfx_Phoebus.init df/raw/
+
+  - mkdir -p /app/df
+  - mv interface.txt df/data/init/
+  - mv df /app/ && rm /app/df/libs/libstdc++.so.6
+  - mv startup.sh /app/ && chmod +x /app/startup.sh
+  - mkdir -p /app/share/applications /app/share/icons/hicolor/256x256/apps/
+  - install org.bay12games.DwarfFortress.png /app/share/icons/hicolor/256x256/apps/
+  - install org.bay12games.DwarfFortress.desktop /app/share/applications/
+sources:
+  - type: archive
+    url: https://www.bay12games.com/dwarves/df_47_05_linux.tar.bz2
+    sha256: ac74a6dbb7d7d9621f430405080322ab50c35f6632352ff2ea923f6dc5affca3
+    dest: df
+  - type: file
+    path: org.bay12games.DwarfFortress.desktop
+  - type: file
+    path: org.bay12games.DwarfFortress.png
+  - type: file
+    path: startup.sh
+  - type: file
+    path: interface.txt
+  - type: archive
+    url: https://github.com/DFgraphics/Phoebus/archive/refs/tags/47.05.tar.gz
+    sha256: ce88a021608a7bb14c27fbbe018a6933c6d18c4b7f34148ba0833064abf40b0d

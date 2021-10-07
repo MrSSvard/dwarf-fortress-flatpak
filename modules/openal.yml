@@ -1,0 +1,15 @@
+name: openal
+cmake: true
+builddir: true
+config-opts:
+  - '-DALSOFT_UTILS:BOOL=OFF'
+  - '-DALSOFT_EXAMPLES:BOOL=OFF'
+  - '-DALSOFT_TESTS:BOOL=OFF'
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share
+sources:
+  - type: archive
+    url: https://github.com/kcat/openal-soft/archive/refs/tags/1.21.1.tar.gz
+    sha256: 8ac17e4e3b32c1af3d5508acfffb838640669b4274606b7892aa796ca9d7467f

@@ -1,0 +1,10 @@
+name: sdl_ttf
+#config-opts:
+ # - LDFLAGS=-L/app/include/freetype2 -Wl,-z,relro,-z,now -Wl,--as-needed 
+cleanup:
+  - /lib/*.a
+  - /lib/*.la
+sources:
+  - type: archive
+    url: https://libsdl.org/projects/SDL_ttf/release/SDL_ttf-2.0.11.tar.gz
+    sha256: 724cd895ecf4da319a3ef164892b72078bd92632a5d812111261cde248ebcdb7
