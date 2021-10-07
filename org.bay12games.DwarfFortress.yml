@@ -1,7 +1,7 @@
 app-id: org.bay12games.DwarfFortress
-runtime: org.gnome.Platform
-runtime-version: '41'
-sdk: org.gnome.Sdk
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
 command: /app/startup.sh
 finish-args:
   - --socket=fallback-x11
